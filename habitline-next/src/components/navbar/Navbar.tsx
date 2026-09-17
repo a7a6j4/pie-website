@@ -12,11 +12,12 @@ import { useEffect, useState } from 'react'
 export type NavItem = {
   label: string
   href: string
+  target?: string
 }
 
 const navItems: NavItem[] = [
   { label: 'Features', href: '/home#features' },
-  { label: 'Blog', href: '/waitlist' },
+  { label: 'Blog', href: 'https://blog.usepie.ng', target: '_blank' },
   { label: 'Waitlist', href: '/waitlist' },
   // { label: 'Smart Assist', href: '/home#smart-assist' },
 ]

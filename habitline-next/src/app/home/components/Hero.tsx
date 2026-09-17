@@ -50,15 +50,15 @@ const Hero = () => {
           </div> */}
 
           <h1 className="mb-5 text-4xl leading-tight font-medium tracking-tight text-white md:text-5xl lg:mb-7.5 lg:text-[90px]">
-            Investments Decisions&nbsp;
+            Manage Your Wealth&nbsp;
             <br className="hidden lg:block" />
-            Made Simply&nbsp;
+            With Expert Guidance&nbsp;
           </h1>
 
-          <p className="mb-6 max-w-sm text-lg leading-normal text-white md:text-xl lg:mb-10">Pie helps you make the right investment decisions for your unique wealth objectives.</p>
+          <p className="mb-6 max-w-sm text-lg leading-normal text-white md:text-xl lg:mb-10">Pie helps you make best and most suitable investment decisions for your unique wealth objectives.</p>
 
           <div className="flex items-center justify-center gap-2 md:gap-5">
-            <Link href="/contact" className="group relative overflow-hidden rounded-full bg-white px-3.5 py-3 text-sm font-medium text-ink transition-all duration-300 hover:scale-95 md:px-8.5 md:py-4 md:text-lg">
+            <Link href="/waitlist" className="group relative overflow-hidden rounded-full bg-white px-3.5 py-3 text-sm font-medium text-ink transition-all duration-300 hover:scale-95 md:px-8.5 md:py-4 md:text-lg">
               <span className="relative block overflow-hidden">
                 <span className="block transition-transform duration-300 group-hover:-translate-y-full">Join The Waitlist</span>
                 <span className="absolute top-full left-0 block transition-transform duration-300 group-hover:-translate-y-full">Join The Waitlist</span>

@@ -28,20 +28,11 @@ import schoolFees from '@/assets/images/gallery/schoolFees.webp'
 import emergencyFund from '@/assets/images/gallery/emergency.webp'
 import vacation from '@/assets/images/gallery/vacation.webp'
 import appStoreLightIcon from '@/assets/images/icons/app-store-light.svg'
-import icon11 from '@/assets/images/icons/icon-11.svg'
-import homeIcon from '@/assets/images/icons/home.svg'
-import icon12 from '@/assets/images/icons/icon-12.svg'
-import icon13 from '@/assets/images/icons/icon-13.svg'
-import icon14 from '@/assets/images/icons/icon-14.svg'
-import icon15 from '@/assets/images/icons/icon-15.svg'
-import icon16 from '@/assets/images/icons/icon-16.svg'
-import icon17 from '@/assets/images/icons/icon-17.svg'
-import icon18 from '@/assets/images/icons/icon-18.svg'
-import icon19 from '@/assets/images/icons/icon-19.svg'
 import playStoreIcon from '@/assets/images/icons/play-store.svg'
 import cloud01 from '@/assets/images/locations/cloud-01.webp'
 import cloud02 from '@/assets/images/locations/cloud-02.webp'
 import cloud04 from '@/assets/images/locations/cloud-04.webp'
+
 
 export type AboutImage = {
   image: StaticImageData
@@ -50,30 +41,30 @@ export type AboutImage = {
 
 export type MarqueeItem = {
   bgColorClass: string
-  icon: StaticImageData
-  iconInvert: boolean
+  icon: string
   label: string
   image: StaticImageData
 }
 
 const aboutImages: AboutImage[] = [
-  { image: about01, animationClass: 'animate-imageSwap' },
-  { image: about02, animationClass: 'animate-imageSwap2' },
-  { image: about03, animationClass: 'animate-imageSwap3' },
-  { image: about04, animationClass: 'animate-imageSwap4' },
+  { image: collegeFund, animationClass: 'animate-imageSwap' },
+  { image: buyCar, animationClass: 'animate-imageSwap2' },
+  { image: retirement, animationClass: 'animate-imageSwap3' },
+  { image: buyHouse, animationClass: 'animate-imageSwap4' },
+  // { image: buyCar, animationClass: 'animate-imageSwap5' },
 ]
 
-const hashtags: string[] = ['#Founders', '#Students', '#BusyParents', '#RemoteTeams']
+const hashtags: string[] = ['Income Earning', 'Wealth Accumulation', 'Liqudity', 'Value Preservation']
 
 const marqueeItems: MarqueeItem[] = [
-  { bgColorClass: 'bg-primary-8', icon: homeIcon, iconInvert: false, label: 'Vacation', image: vacation },
-  { bgColorClass: 'bg-primary-1', icon: icon12, iconInvert: true, label: 'Monthly Groceries', image: groceries },
-  { bgColorClass: 'bg-primary-2', icon: icon13, iconInvert: true, label: 'Retirement', image: retirement },
-  { bgColorClass: 'bg-primary-3', icon: icon14, iconInvert: true, label: 'Emergency Fund', image: emergencyFund },
-  { bgColorClass: 'bg-primary-7', icon: icon15, iconInvert: true, label: 'School Fees', image: schoolFees },
-  { bgColorClass: 'bg-primary-6', icon: icon16, iconInvert: true, label: 'Children College Fund', image: collegeFund },
-  { bgColorClass: 'bg-primary-5', icon: icon17, iconInvert: true, label: 'Buy House', image: buyHouse },
-  { bgColorClass: 'bg-primary-4', icon: icon18, iconInvert: true, label: 'New Car', image: buyCar },
+  { bgColorClass: 'bg-primary-8', icon: 'lucide:palmtree', label: 'Vacation', image: vacation },
+  { bgColorClass: 'bg-primary-1', icon: 'lucide:shopping-cart', label: 'Monthly Groceries', image: groceries },
+  { bgColorClass: 'bg-primary-2', icon: 'lucide:armchair', label: 'Retirement', image: retirement },
+  { bgColorClass: 'bg-primary-3', icon: 'lucide:shield', label: 'Emergency Fund', image: emergencyFund },
+  { bgColorClass: 'bg-primary-7', icon: 'lucide:book-open', label: 'School Fees', image: schoolFees },
+  { bgColorClass: 'bg-primary-6', icon: 'lucide:graduation-cap', label: 'Children College Fund', image: collegeFund },
+  { bgColorClass: 'bg-primary-5', icon: 'lucide:home', label: 'Buy House', image: buyHouse },
+  { bgColorClass: 'bg-primary-4', icon: 'lucide:car', label: 'New Car', image: buyCar },
 ]
 
 const About = () => {
@@ -82,22 +73,19 @@ const About = () => {
       <div className="container">
         <div className="md:mb-15">
           <h2 className="mx-auto mb-10 max-w-5xl text-center text-3xl leading-tight font-medium tracking-tight text-ink md:text-5xl">
-            Define Your Objectives{' '}
+            Skip the continuous mental effort of making good investment decisions, define your objectives{' '}
             <span className="relative inline-flex h-6.5 w-12.5 overflow-hidden rounded-full align-middle md:h-11 md:w-22.5">
               {aboutImages.map((img, idx) => (
                 <Image key={idx} src={img.image} className={`absolute inset-0 h-full w-full object-cover ${img.animationClass}`} alt="" />
               ))}
-            </span>{' '},
-            and let Pie help you achieve them with robo-advisory tailored for you and only you,
+            </span>{' '}
+            and let Pie find and manage the best opportunities for you with cutting edge robo-advisory,
             <br className="hidden lg:block" />
             &nbsp;
-            {/* <span className="mx-1 inline-flex align-middle">
-              <Image src={icon19} alt="Icon" className="size-7.5 md:size-15" />
-            </span>{' '} */}
             so you can focus on what really matters.
           </h2>
 
-          <p className="text-default-500 mb-3.5 text-base font-medium md:text-xl lg:text-2xl">Used by smart investors.</p>
+          <p className="text-default-500 mb-3.5 text-base font-medium md:text-xl lg:text-2xl">For everyone and anyone.</p>
 
           <div className="flex flex-wrap justify-center gap-3.5">
             {hashtags.map((tag, idx) => (
@@ -119,7 +107,7 @@ const About = () => {
                   <Fragment key={idx}>
                     <div className="inline-flex size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl md:size-37.5">
                       <div className={`flex size-7.5 shrink-0 items-center justify-center rounded-full md:size-12.5 ${item.bgColorClass}`}>
-                        <Image src={item.icon} className={`size-3.5 md:size-6 ${item.iconInvert ? 'invert' : ''}`} alt="" />
+                        <Icon icon={item.icon} className="size-3.5 text-white md:size-6" />
                       </div>
                       <span className="text-ink text-center text-sm font-medium md:text-base">{item.label}</span>
                     </div>
@@ -133,7 +121,7 @@ const About = () => {
                   <Fragment key={idx}>
                     <div className="inline-flex size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl md:size-37.5">
                       <div className={`flex size-7.5 shrink-0 items-center justify-center rounded-full md:size-12.5 ${item.bgColorClass}`}>
-                        <Image src={item.icon} className={`size-3.5 md:size-6 ${item.iconInvert ? 'invert' : ''}`} alt="" />
+                        <Icon icon={item.icon} className="size-3.5 text-white md:size-6" />
                       </div>
                       <span className="text-ink text-center text-sm font-medium md:text-base">{item.label}</span>
                     </div>
@@ -151,7 +139,7 @@ const About = () => {
                   <Fragment key={idx}>
                     <div className="inline-flex size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl md:size-37.5">
                       <div className={`flex size-7.5 shrink-0 items-center justify-center rounded-full md:size-12.5 ${item.bgColorClass}`}>
-                        <Image src={item.icon} className={`size-3.5 md:size-6 ${item.iconInvert ? 'invert' : ''}`} alt="" />
+                        <Icon icon={item.icon} className="size-3.5 text-white md:size-6" />
                       </div>
                       <span className="text-ink text-center text-sm font-medium md:text-base">{item.label}</span>
                     </div>
@@ -165,7 +153,7 @@ const About = () => {
                   <Fragment key={idx}>
                     <div className="inline-flex size-32.5 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-5 shadow-xl md:size-37.5">
                       <div className={`flex size-7.5 shrink-0 items-center justify-center rounded-full md:size-12.5 ${item.bgColorClass}`}>
-                        <Image src={item.icon} className={`size-3.5 md:size-6 ${item.iconInvert ? 'invert' : ''}`} alt="" />
+                        <Icon icon={item.icon} className="size-3.5 text-white md:size-6" />
                       </div>
                       <span className="text-ink text-center text-sm font-medium md:text-base">{item.label}</span>
                     </div>
@@ -192,7 +180,7 @@ const About = () => {
           <p className="text-default-700 mb-2.5 w-xs text-base leading-normal md:w-xl md:text-lg">Hold investments with the best risk adjusted returns that suit your unique wealth objectives. Stay on track with periodic advisory to optimize performance.</p>
 
           <div className="flex w-full flex-col justify-center gap-5 md:flex-row">
-            <Link href="" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-ink px-8.5 text-white shadow-xl! transition-all duration-300 hover:scale-95">
+            <Link href="/waitlist" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full bg-ink px-8.5 text-white shadow-xl! transition-all duration-300 hover:scale-95">
               <div className="relative inline-flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
                 <div className="flex h-14 items-center gap-3">
                   <Image src={appStoreLightIcon} className="h-5 w-5" alt="" />
@@ -205,7 +193,7 @@ const About = () => {
               </div>
             </Link>
 
-            <Link href="" className="group bg-default-200 relative inline-flex items-center justify-center overflow-hidden rounded-full px-8.5 text-ink transition-all duration-300 hover:scale-95">
+            <Link href="/waitlist" className="group bg-default-200 relative inline-flex items-center justify-center overflow-hidden rounded-full px-8.5 text-ink transition-all duration-300 hover:scale-95">
               <div className="relative flex flex-col items-center transition-transform duration-300 group-hover:-translate-y-full">
                 <div className="flex h-14 items-center gap-2.5">
                   <Image src={playStoreIcon} className="h-5 w-5" alt="" />

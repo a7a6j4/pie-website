@@ -12,7 +12,6 @@ import dashboard21 from '@/assets/images/workspace/dashboard-21.svg'
 import dashboard22 from '@/assets/images/workspace/dashboard-22.svg'
 import dashboard07 from '@/assets/images/workspace/dashboard-07.png'
 import dashboard19 from '@/assets/images/workspace/dashboard-19.svg'
-import suggestionImage from '@/assets/images/workspace/suggestion-image.webp'
 
 const SmartAssist = () => {
   return (
@@ -41,7 +40,7 @@ const SmartAssist = () => {
             </div>
           </div>
 
-          <div className="group relative mx-auto flex h-100 w-full items-center justify-center overflow-hidden rounded-2xl shadow-2xl md:aspect-video lg:aspect-[4/3] lg:h-142 lg:max-w-4xl" style={{ backgroundImage: `url(${suggestionImage.src})` }}>
+          <div className="bg-ink group relative mx-auto flex h-100 w-full items-center justify-center overflow-hidden rounded-2xl shadow-2xl md:aspect-video lg:aspect-[4/3] lg:h-142 lg:max-w-4xl">
             <div className="absolute top-10 -right-16 transition-transform duration-700 ease-out md:top-20">
               <Image src={dashboard19} alt="Smartphone Mockup" className="h-auto -rotate-20 lg:w-xs" />
             </div>
@@ -70,42 +69,45 @@ const SmartAssist = () => {
 
         <div className="mt-24 grid grid-cols-2 items-stretch gap-2.5 md:gap-7.5 lg:grid-cols-4">
           <div className="group flex h-full flex-col justify-start gap-y-6.5 rounded-2xl bg-white p-3.5 md:gap-y-10 md:p-5 lg:gap-y-17.5 lg:p-7.5">
-            <div className="bg-primary-3 flex size-12.5 items-center justify-center rounded-full">
-              <Icon icon="lucide:bell-dot" className="text-xl text-white" />
+            <div className="bg-ink flex size-12.5 items-center justify-center rounded-full">
+              <Icon icon="arcticons:to-do-list-1" className="text-xl text-white" />
             </div>
             <div>
-              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Higer Returns</h4>
-              <p className="text-default-700 text-sm leading-normal md:text-lg">Recommended investments with the highest risk adjusted returns.</p>
+              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Define Your Objectives</h4>
+              <p className="text-default-700 text-sm leading-normal md:text-lg">Earn income periodically, become financially free, achieve a financial target etc.</p>
             </div>
           </div>
 
           <div className="group flex h-full flex-col justify-start gap-y-6.5 rounded-2xl bg-white p-3.5 md:gap-y-10 md:p-5 lg:gap-y-17.5 lg:p-7.5">
-            <div className="bg-primary-7 flex size-12.5 items-center justify-center rounded-full">
+            <div className="bg-ink flex size-12.5 items-center justify-center rounded-full">
+              <Icon icon="arcticons:ai-chat-alt-2" className="text-xl text-white" />
+            </div>
+            {/* <div className="bg-primary-7 flex size-12.5 items-center justify-center rounded-full">
               <Image src={icon32} alt="" />
-            </div>
+            </div> */}
             <div>
-              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Increased Liquidity</h4>
-              <p className="text-default-700 text-sm leading-normal md:text-lg">T+0 withdrawals.</p>
+              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Get Real-Time Recommendations</h4>
+              <p className="text-default-700 text-sm leading-normal md:text-lg">Receive real-time recommendations for the best opportunities to achieve your unique wealth objectives.</p>
             </div>
           </div>
 
           <div className="group flex h-full flex-col justify-start gap-y-6.5 rounded-2xl bg-white p-3.5 md:gap-y-10 md:p-5 lg:gap-y-17.5 lg:p-7.5">
-            <div className="bg-primary-6 flex size-12.5 items-center justify-center rounded-full">
-              <Icon icon="lucide:eye" className="text-xl text-white" />
+            <div className="bg-ink flex size-12.5 items-center justify-center rounded-full">
+              <Icon icon="bi:pie-chart-fill" className="text-xl text-white" />
             </div>
             <div>
-              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Personalised Constraints</h4>
-              <p className="text-default-700 text-sm leading-normal md:text-lg">Define your liquidity lock, withdrawal limit and commitment tailored to your unique wealth objectives.</p>
+              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-2xl">Invest in Unique Portfolios</h4>
+              <p className="text-default-700 text-sm leading-normal md:text-lg">Invest in unique portfolios tailored to your unique wealth objective.</p>
             </div>
           </div>
 
           <div className="group flex h-full flex-col justify-start gap-y-6.5 rounded-2xl bg-white p-3.5 md:gap-y-10 md:p-5 lg:gap-y-17.5 lg:p-7.5">
-            <div className="bg-primary-2 flex size-12.5 items-center justify-center rounded-full">
-              <Icon icon="lucide:lightbulb" className="text-xl text-white" />
+            <div className="bg-ink flex size-12.5 items-center justify-center rounded-full">
+              <Icon icon="ph:trend-up-fill" className="text-xl text-white" />
             </div>
             <div>
-              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-[21px]">Investing Confidence</h4>
-              <p className="text-default-700 text-sm leading-normal md:text-lg">Vetted opportunities, simple decision walkthrough and decision intelligence.</p>
+              <h4 className="text-ink mb-2.5 text-xl font-medium md:text-[21px]">Outperform with Expert Advice</h4>
+              <p className="text-default-700 text-sm leading-normal md:text-lg">Receive periodic expert advice tailored to stay on track to achieve your unique wealth objectives.</p>
             </div>
           </div>
         </div>

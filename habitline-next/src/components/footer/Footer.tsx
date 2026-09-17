@@ -31,10 +31,9 @@ const otherLinks: FooterLink[] = [
 ]
 
 const socialLinks: SocialLink[] = [
-  { link: '', icon: 'tabler:brand-instagram' },
-  { link: '', icon: 'tabler:brand-x-filled' },
-  { link: '', icon: 'tabler:brand-linkedin-filled' },
-  { link: '', icon: 'tabler:brand-facebook-filled' },
+  { link: 'https://www.instagram.com/wealth.pie/', icon: 'tabler:brand-instagram' },
+  { link: 'https://www.linkedin.com/company/pie-wealth/', icon: 'tabler:brand-x-filled' },
+  { link: 'https://x.com/piewealth', icon: 'tabler:brand-linkedin-filled' },
 ]
 
 const Footer = () => {

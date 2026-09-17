@@ -22,12 +22,12 @@ const stackSansHeadline = Stack_Sans_Headline({
 
 export const metadata: Metadata = {
   title: {
-    template: `%s | ${DEFAULT_PAGE_TITLE}`,
+    template: DEFAULT_PAGE_TITLE,
     default: DEFAULT_PAGE_TITLE,
   },
   icons: { icon: favicon.src },
-  description: 'Habitline is a modern and fully responsive mobile app and SaaS landing page template built with Tailwind CSS 4. Perfect for AI startups, productivity apps, software products, digital platforms, and modern web applications.',
-  keywords: ['mobile app template', 'saas landing page', 'tailwind css template', 'ai startup website', 'app landing page', 'productivity app template', 'software website template', 'startup landing page', 'web app template', 'saas html template'],
+  description: 'Manage Your Wealth With Expert Guidiance.',
+  keywords: ['wealth management', 'investment advice', 'financial planning', 'portfolio management', 'retirement planning', 'tax optimization', 'financial advice', 'wealth management software', 'investment management', 'financial consulting'],
   authors: [{ name: 'Unifato' }],
   robots: 'index, follow',
 }
